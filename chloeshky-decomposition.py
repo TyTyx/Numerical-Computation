@@ -4,6 +4,7 @@ Created on Tue Apr  2 20:39:42 2019
 
 @author: Tylor
 """
+# http://people.duke.edu/~ccc14/sta-663-2016/07_LinearAlgebra2.html#Cholesky-Decomposition
 
 import numpy as np
 
