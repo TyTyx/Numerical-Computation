@@ -13,7 +13,8 @@ Solve linear system using LU decomposition and Gaussian elimination
 import numpy as np
 from scipy.linalg import lu, inv
 
-def gausselim(A,B):
+
+def gausselim(A, B):
     """
     Solve Ax = B using Gaussian elimination and LU decomposition.
     A = LU   decompose A into lower and upper triangular matrices
@@ -35,7 +36,7 @@ def gausselim(A,B):
         # skip for loop if m == 0
         if m:
             for n in range(m):
-                y[m] -= y[n] * pl[m,n]
+                y[m] -= y[n] * pl[m, n]
         y[m] /= pl[m, m]
 
     # backward substitution to solve for y = Ux
@@ -53,6 +54,5 @@ def gausselim(A,B):
 
 
 if __name__ == '__main__':
-    x = gausselim(np.array([[1,  2,  1, 4], [2, 0, 4, 3], [4,  2,  2, 1], [-3, 1, 3, 2]]),
-                  np.array([[13], [28], [20], [6]]))
+    x = gausselim(np.array([[1,  2,  1, 4], [2, 0, 4, 3], [4,  2,  2, 1], [-3, 1, 3, 2]]), np.array([[13], [28], [20], [6]]))
     print(x)
