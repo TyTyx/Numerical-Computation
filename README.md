@@ -1,3 +1,3 @@
 # Numerical-Computation
 
-Programs created for Software Exam.
+Programs for Num Comp. Software Exam.
